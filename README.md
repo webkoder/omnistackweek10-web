@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Semana Omnistack 10
+
+Formulário de cadastro de desenvolvedores usando o usuário do github e informações de localização. Desenvolvido com ReactJS.
+
 ## Available Scripts
 
 In the project directory, you can run:

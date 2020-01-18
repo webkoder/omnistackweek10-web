@@ -14,7 +14,6 @@ function DevForm({ onSubmit }){
             const { latitude, longitude } = position.coords;
             setLatitude(latitude);
             setLongitude(longitude);
-    
            },
           err => { console.log(err) },
           { timeout: 30000 }
