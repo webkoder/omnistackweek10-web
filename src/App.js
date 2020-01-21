@@ -21,11 +21,17 @@ function App() {
   
   }, [] );
 
+  async function deleteDev(_id){
+    console.log( _id )
+
+    const response = await api.delete(`/devs/${_id}`)
+    setDevs( response.data )
+  }
+
   async function handleAddDev(data){
     
       const response = await api.post('/devs', data);
   
-      
       setDevs( [...devs, response.data] );
   }
 
@@ -41,7 +47,7 @@ function App() {
 
         <ul>
           { devs.map( dev => (
-            <DevItem key={ dev._id } dev={dev} />
+            <DevItem key={ dev._id } dev={dev} onDelete={deleteDev} />
           ))}
 
         </ul>

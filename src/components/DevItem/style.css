@@ -48,3 +48,12 @@ li.dev-item a{
 li.dev-item a:hover{
     color: #5a2ea6
 }
+
+li.dev-item .options{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+li.dev-item .options svg{
+    color: #ff4d9f
+}
